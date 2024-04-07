@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Plate']
+
+roboflow:
+  workspace: main-ntpvt
+  project: platefinder-ms6uq
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/main-ntpvt/platefinder-ms6uq/dataset/1
