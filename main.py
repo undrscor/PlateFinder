@@ -83,5 +83,3 @@ plt.title("plate image")
 plt.show()
 
     
-    
-
