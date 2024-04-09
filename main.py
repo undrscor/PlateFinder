@@ -11,7 +11,7 @@ import easyocr                          #text detection
 license_plate_detector = YOLO('license_plate_detector.pt')
 
 # trains model with custom made labeled data, higher epochs means more training
-#numOfEpochs = 30
+#numOfEpochs = 100
 #license_plate_detector.train(data="data\data.yaml", epochs=numOfEpochs)
 
 
@@ -52,7 +52,7 @@ def read_license_plate(license_plate_crop, img):
 
 
 # Load an image to test
-image = io.imread(r"data\test\testImage1.jpg")
+image = io.imread(r"data\test\testImage10.jpg")
 
 results = license_plate_detector.predict(image)  # runs the plate detector
 result = results[0]
