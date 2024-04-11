@@ -52,7 +52,7 @@ def read_license_plate(license_plate_crop, img):
 
 
 # Load an image to test
-image = io.imread(r"data\test\testImage10.jpg")
+image = io.imread(r"data\test\testImage12.jpg")
 
 results = license_plate_detector.predict(image)  # runs the plate detector
 result = results[0]
@@ -82,4 +82,3 @@ plt.axis('off')
 plt.title("plate image")
 plt.show()
 
-    
